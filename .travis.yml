@@ -40,7 +40,7 @@ before_script:
   - julia -e 'Pkg.clone("https://github.com/JuliaPackaging/BinaryBuilder.jl"); Pkg.build()'
 
 script:
-  - julia build_tarballs.jl
+  - julia build_tarballs.jl $TARGET
 
 deploy:
   provider: releases
