@@ -18,7 +18,7 @@ glib_cv_uscore=no
 ac_cv_path_MSGFMT=$prefix/bin/msgfmt
 END
 
-./configure --enable-libmount=no --cache-file=glib.cache --prefix=$prefix --host=$target
+./configure LDFLAGS=-L$prefix/lib CPPFLAGS=-I$prefix/include --enable-libmount=no --cache-file=glib.cache --prefix=$prefix --host=$target
 
 make -j${nproc}
 make install
