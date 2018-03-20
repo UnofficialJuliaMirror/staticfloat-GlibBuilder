@@ -33,7 +33,7 @@ platforms = [
     BinaryProvider.Linux(:armv7l, :glibc),
     BinaryProvider.Linux(:powerpc64le, :glibc),
     BinaryProvider.MacOS(),
-    # Libffi doesn't build on windows yet :(
+    # gettext doesn't build on windows yet :(
     #BinaryProvider.Windows(:i686),
     #BinaryProvider.Windows(:x86_64)
 ]

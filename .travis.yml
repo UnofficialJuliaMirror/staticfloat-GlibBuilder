@@ -23,7 +23,7 @@ env:
     - TARGET=arm-linux-gnueabihf
     - TARGET=powerpc64le-linux-gnu
     - TARGET=x86_64-apple-darwin14
-   # libffi doesn't build on Windows yet. :(
+   # gettext doesn't build on Windows yet. :(
    #- TARGET=x86_64-w64-mingw32
    #- TARGET=i686-w64-mingw32
 sudo: required
